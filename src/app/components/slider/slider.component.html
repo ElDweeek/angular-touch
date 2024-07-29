@@ -1,27 +1,14 @@
-<!--
 
-  <div class="row">
-      @for (x of Categories; track $index) {
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-2 mb-2">
-          <a href="#" class="card">
-            <img src="{{x.src}}" class="card-img-top w-100" alt="">
-            <div class="card-body">
-              <h5 class="card-title">{{x.name}}</h5>
-            </div>
-          </a>
-        </div>
-        }
-    </div>
- -->
 <div class="container">
 
-  <p-carousel [value]="Categories" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]=""
-    autoplayInterval="3000">
+  <p-carousel [value]="Categories" [numVisible]="3" [numScroll]="3" [circular]="true"
+    [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
     <ng-template let-product pTemplate="item">
       <div class="border-1 surface-border border-round m-2 p-3">
         <div class="mb-3">
           <div class="relative mx-auto text-center">
-            <img src="{{product.src }}" style="width: 250px; align-self: center;" [alt]="product.name" class="w-full border-round" />
+            <img src="{{product.src}}" style="width: 250px; align-self: center;" [alt]="product.name"
+              class="w-full border-round" />
           </div>
         </div>
         <div class="mb-3 font-medium text-center">

@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { CardsComponent } from '../cards/cards.component';
-import { SliderComponent } from '../slider/slider.component';
 import { FooterComponent } from '../footer/footer.component';
+import { SliderComponent } from '../slider/slider.component';
 
 @Component({
   selector: 'home',
   standalone: true,
-  imports: [RouterOutlet,
+  imports: [
+    RouterOutlet,
     NavbarComponent,
     CardsComponent,
     SliderComponent,

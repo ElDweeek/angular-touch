@@ -9,8 +9,23 @@ import { CarouselModule } from 'primeng/carousel';
   styleUrl: './slider.component.css'
 })
 export class SliderComponent {
-
-  Categories: Array<Category> = [
+  responsiveOptions: Array<BreakPoint> = [
+    {
+      breakpoint: '1024px',
+      numVisible: 3,
+      numScroll: 3
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 2,
+      numScroll: 2
+    },
+    {
+      breakpoint: '560px',
+      numVisible: 1,
+      numScroll: 1
+    }
+  ];  Categories: Array<Category> = [
     {
       src: "assets/images/accessories.webp",
       name: "Accessories"
@@ -34,6 +49,34 @@ export class SliderComponent {
     {
       src: "assets/images/glasses.jpg",
       name: "Glasses"
+    },
+    {
+      src: "assets/images/glasses.jpg",
+      name: "Glasses"
+    },
+    {
+      src: "assets/images/glasses.jpg",
+      name: "Glasses"
+    },
+    {
+      src: "assets/images/glasses.jpg",
+      name: "Glasses"
+    },
+    {
+      src: "assets/images/labtop.webp",
+      name: "Labtops"
+    },
+    {
+      src: "assets/images/labtop.webp",
+      name: "Labtops"
+    },
+    {
+      src: "assets/images/labtop.webp",
+      name: "Labtops"
+    },
+    {
+      src: "assets/images/labtop.webp",
+      name: "Labtops"
     }
   ]
 }
@@ -42,3 +85,8 @@ interface Category {
   name: string
 }
 
+interface BreakPoint  {
+  breakpoint: string,
+  numVisible: number,
+  numScroll: number
+}
