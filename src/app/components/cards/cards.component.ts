@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 
 @Component({
-  selector: 'slider-atom',
+  selector: 'cards',
   standalone: true,
   imports: [CardComponent],
-  templateUrl: './slider-atom.component.html',
-  styleUrl: './slider-atom.component.css'
+  templateUrl: './cards.component.html',
+  styleUrl: './cards.component.css'
 })
-export class SliderAtomComponent {
+export class CardsComponent {
 
 }
