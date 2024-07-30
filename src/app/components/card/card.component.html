@@ -10,17 +10,16 @@
 
 <div class="row">
   @for (x of Cards; track $index) {
-    <div class="col-lg-4 col-md-6 col-sm-12 mt-2 mb-2">
-      <div class="card">
-        <a href="#">
-          <img src="{{x.imgSrc}}" class="card-img-top w-100" alt="{{x.title}}">
-          <div class="card-body bg-body-secondary ">
-            <h5 class="card-title text-black text-center m-0">{{x.title}}</h5>
-          </div>
-        </a>
-        <p class="card-text p-2">{{x.description}}</p>
-      </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 mt-2 mb-2">
+    <div class="card">
+      <a href="#">
+        <img src="{{x.imgSrc}}" class="card-img-top w-100" alt="{{x.title}}">
+        <div class="card-body bg-body-secondary ">
+          <h5 class="card-title text-black text-center m-0">{{x.title}}</h5>
+        </div>
+      </a>
+      <p class="card-text p-2">{{x.description}}</p>
     </div>
-    }
+  </div>
+  }
 </div>
-

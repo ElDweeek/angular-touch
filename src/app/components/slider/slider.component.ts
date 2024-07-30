@@ -25,7 +25,8 @@ export class SliderComponent {
       numVisible: 1,
       numScroll: 1
     }
-  ];  Categories: Array<Category> = [
+  ];
+  Categories: Array<Category> = [
     {
       src: "assets/images/accessories.webp",
       name: "Accessories"
