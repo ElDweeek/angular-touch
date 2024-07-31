@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardComponent } from '../card/card.component';
+import { Card, CardService } from '../../services/card-service/card.service';
 
 @Component({
   selector: 'cards',
@@ -8,6 +9,12 @@ import { CardComponent } from '../card/card.component';
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.css'
 })
-export class CardsComponent {
+export class CardsComponent implements OnInit{
 
+  Cards: Array<Card> = [];
+
+  constructor(private x : CardService){};
+  ngOnInit(): void {
+    this.Cards = this.x.getCards();
+  }
 }
