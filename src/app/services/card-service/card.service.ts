@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Card } from '../../interfaces/card.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -62,9 +63,5 @@ export class CardService {
   }
 }
 
-export interface Card {
-  imgSrc: string;
-  title: string;
-  description: string;
-}
+
 

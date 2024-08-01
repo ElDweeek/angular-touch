@@ -9,5 +9,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-Logo: string = "assets/images/LOGO.jpg"
+Logo: string = "assets/images/LOGO.png"
 }
